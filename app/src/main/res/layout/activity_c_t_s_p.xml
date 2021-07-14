@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CTSPActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCTSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#857E7E"
+        app:title="CHI TIẾT SẢN PHẨM"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgCTSP"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTenSP_CTSP"
+        app:srcCompat="@drawable/administrator" />
+
+    <TextView
+        android:id="@+id/txtTenSP_CTSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="MSI GAMING"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCTSP" />
+
+    <TextView
+        android:id="@+id/txtGiaKMSP_CTSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Gia : 20,000,000 VND"
+        android:textSize="18sp"
+        android:textColor="#F10000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgCTSP"
+        app:layout_constraintTop_toBottomOf="@+id/txtTenSP_CTSP" />
+
+    <TextView
+        android:id="@+id/txtGia_CTSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18,000,000 VND"
+        android:textStyle="bold"
+        android:background="@drawable/custom_km"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgCTSP"
+        app:layout_constraintTop_toBottomOf="@+id/txtGiaKMSP_CTSP" />
+
+    <TextView
+        android:id="@+id/editSL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="@drawable/custom_edit_sl"
+        android:layout_margin="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgCTSP"
+        app:layout_constraintTop_toBottomOf="@+id/txtGia_CTSP" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMH_CTSP"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:text="MUA HÀNG"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/custom_btn_content"
+        app:layout_constraintTop_toBottomOf="@+id/editSL"
+        app:layout_constraintStart_toEndOf="@+id/imgCTSP"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="405dp"
+        android:layout_height="24dp"
+        android:text="MÔ TẢ CHI TIẾT SẢN PHẨM"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ED0808"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCTSP" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+        <TextView
+            android:id="@+id/txtMoTaSP"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="akjfalkjfljalfjlaj" />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

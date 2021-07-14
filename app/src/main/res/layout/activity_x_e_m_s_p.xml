@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XEMSPActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCTSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#857E7E"
+        app:title="CHI TIẾT SẢN PHẨM"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_"
+        app:titleTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgCTSP"
+        android:layout_width="320dp"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTenSP_CTSP"
+        app:srcCompat="@drawable/administrator" />
+
+    <TextView
+        android:id="@+id/txtTenSP_CTSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="MSI GAMING"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCTSP" />
+
+    <TextView
+        android:id="@+id/txtGiaKMSP_CTSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gia : 20,000,000 VND"
+        android:textColor="#F10000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCTSP" />
+
+
+    <TextView
+        android:id="@+id/txtGia_CTSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="18,000,000 VND"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGiaKMSP_CTSP" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="405dp"
+        android:layout_height="24dp"
+        android:layout_margin="10dp"
+        android:text="MÔ TẢ CHI TIẾT SẢN PHẨM"
+        android:textColor="#ED0808"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGia_CTSP" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+        <TextView
+            android:id="@+id/txtMoTaSP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="akjfalkjfljalfjlaj"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
